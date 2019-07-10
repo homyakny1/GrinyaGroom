@@ -1,4 +1,4 @@
-body
+body,
 html {
     font-family: 'Cardo', serif;
     width:100%;
@@ -110,12 +110,18 @@ ul.subnav {
 
 .content-section{
     padding-top:30px;
+    padding-bottom: 20px;
 }
 
 .slick-arrow{
     display: none !important;
 }
 
-#reviews{
-    background-color: rgb(219, 219, 219);
+#reviews,
+#contact{
+    background-color: rgb(240, 240, 240);
+}
+
+p a{
+    color: black !important;
 }
