@@ -51,6 +51,10 @@ h6 {
     background: rgba(255, 255, 255, 0.75);
 }
 
+.modal{
+    background-color: #00000080;
+}
+
 .modal-content {
     background: none !important;
     border: none !important;
@@ -96,6 +100,18 @@ ul.subnav {
     display: none !important;
 }
 
+.juicer-feed.slider li.feed-item.juicer{
+    display: none !important;
+}
+
+.j-text{
+    display: none !important;
+}
+
 .content-section{
     margin-top:30px
+}
+
+.slick-arrow{
+    display: none !important;
 }
