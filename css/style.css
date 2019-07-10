@@ -1,0 +1,93 @@
+body
+html {
+    font-family: 'Cardo', serif;
+    width:100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    background-color: gray
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    display: grid !important;
+    text-align: center;
+    border: solid 2px;
+    padding: 10px;
+}
+
+.bg-light {
+    background-color: #f8f9fa00 !important;
+}
+
+.brand-logo {
+    margin-top: -10px;
+}
+
+.menu-button {
+    border: 0 !important;
+}
+
+.menu-button i {
+    font-size: 35px;
+}
+
+.modal-dialog {
+    text-align: center;
+}
+
+.navbar{
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.modal-content {
+    background: none !important;
+    border: none !important;
+}
+
+ul.subnav {
+    padding-left: 0px;
+    list-style: none;
+}
+
+.subnav {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    color: aliceblue;
+}
+
+.nav-link:hover {
+    color: rgb(202, 201, 201);
+}
+
+.masthead {
+    padding: 230px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/bg.jpg) top center no-repeat #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.juicer-feed h1.referral{
+    display: none !important;
+}
