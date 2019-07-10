@@ -77,10 +77,10 @@ ul.subnav {
 }
 
 .masthead {
-    padding: 230px 0;
+    padding: 40vh 0;
     text-align: center;
     color: #fff;
-    background: url(../img/bg.jpg) top center no-repeat #000;
+    background: url(../img/bg.jpg) center center no-repeat #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -88,6 +88,14 @@ ul.subnav {
     height: 100vh;
 }
 
+.masthead{
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .29);
+}
+
 .juicer-feed h1.referral{
     display: none !important;
+}
+
+.content-section{
+    margin-top:30px
 }
