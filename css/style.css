@@ -25,6 +25,7 @@ h6 {
     text-align: center;
     border: solid 2px;
     padding: 10px;
+    font-size: 1rem !important;
 }
 
 .bg-light {
@@ -125,7 +126,7 @@ ul.subnav {
     display: none !important;
 }
 
-#reviews,
+#portfolio,
 #contact {
     background-color: rgb(240, 240, 240);
 }
@@ -135,7 +136,7 @@ ul.subnav {
 }
 
 #review-container{
-    color:  #f0f0f1;
+    color:  white;
 }
 
 .romw{
@@ -143,7 +144,7 @@ ul.subnav {
 }
 
 p a {
-    color:  #f0f0f1 !important;
+    color:  white !important;
 }
 
 button:focus {
