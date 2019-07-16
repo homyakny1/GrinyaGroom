@@ -140,6 +140,14 @@ ul.subnav {
     background-color: #fff2f5;
 }
 
+#contact{
+    background-image: linear-gradient(white, #fff2f5 10%, #fff2f5);
+}
+
+#portfolio{
+    background-image: linear-gradient(white, #fff2f5 10%, #fff2f5 98%, white  );
+}
+
 #reviews {
     padding-bottom: 0
 }
