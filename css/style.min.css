@@ -3,7 +3,6 @@ html {
     font-family: Cardo, serif;
     width: 100%;
     height: 100%;
-    touch-action: none;
 }
 
 body {
@@ -121,10 +120,6 @@ ul.subnav {
 .content-section {
     padding-top: 30px;
     padding-bottom: 20px;
-}
-
-.content-section {
-    touch-action: none;
 }
 
 .slick-arrow {
