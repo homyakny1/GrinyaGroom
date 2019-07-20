@@ -3,12 +3,12 @@ html {
     font-family: Cardo, serif;
     width: 100%;
     height: 100%;
-    background-color: 
+    touch-action: none;
 }
 
 body {
     position: relative;
-    background-color: gray
+    background-color: gray;
 }
 
 h1,
@@ -120,18 +120,22 @@ ul.subnav {
 
 .content-section {
     padding-top: 30px;
-    padding-bottom: 20px
+    padding-bottom: 20px;
+}
+
+.content-section {
+    touch-action: none;
 }
 
 .slick-arrow {
     display: none !important
 }
 
-#about{
+#about {
     color: rgb(83, 83, 83) !important;
 }
 
-#about h2{
+#about h2 {
     color: #000;
 }
 
@@ -140,12 +144,12 @@ ul.subnav {
     background-color: #fff2f5;
 }
 
-#contact{
+#contact {
     background-image: linear-gradient(white, #fff2f5 10%, #fff2f5);
 }
 
-#portfolio{
-    background-image: linear-gradient(white, #fff2f5 10%, #fff2f5 98%, white  );
+#portfolio {
+    background-image: linear-gradient(white, #fff2f5 10%, #fff2f5 98%, white);
 }
 
 #reviews {
@@ -161,7 +165,7 @@ ul.subnav {
 }
 
 .romw h3,
-.romw-date{
+.romw-date {
     color: black !important;
 }
 
@@ -173,31 +177,32 @@ button:focus {
     outline: 0
 }
 
-.btn-danger{
+.btn-danger {
     background-color: #e464aa !important;
     border-color: #e464aa !important;
 }
 
-.juicer-feed{
+.juicer-feed {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.heading{
+.heading {
     text-decoration: underline;
     text-decoration-color: rgba(56, 56, 56, 0.226);
     -webkit-text-decoration-color: rgba(56, 56, 56, 0.226);
     margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 600px)  {
+@media only screen and (min-width: 600px) {
     .masthead {
-    padding: 40vh 0;
-    text-align: center;
-    color: #fff;
-    background: url(../img/pc-bg.jpg) center center no-repeat #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100vh
+        padding: 40vh 0;
+        text-align: center;
+        color: #fff;
+        background: url(../img/pc-bg.jpg) center center no-repeat #000;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100vh
+    }
 }
