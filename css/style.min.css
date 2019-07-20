@@ -201,3 +201,7 @@ button:focus {
         height: 100vh
     }
 }
+
+.j-post-overlay.juicer-feed ul.j-share {
+    display: none !important;
+}
