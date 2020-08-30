@@ -20,13 +20,13 @@ h6 {
     text-transform: uppercase
 }
 
-.navbar-brand {
+/* .navbar-brand {
     display: grid !important;
     text-align: center;
     border: solid 2px;
     padding: 10px;
     font-size: 1rem !important
-}
+} */
 
 .bg-light {
     background-color: #f8f9fa00 !important
