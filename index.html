@@ -47,6 +47,7 @@
 
 </head>
 
+<div id="WAButton"></div>  
 <body id="page-top">
   <div class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true">
@@ -106,7 +107,6 @@
                 target="_blank">Schedule an Appointment</a>
             </div>
             <!--Div where the WhatsApp will be rendered-->  
-            <div id="WAButton"></div>  
             <br>
             <a href="#about" class="btn btn-circle js-scroll-trigger" id='scrollButton'>
               <i class="fa fa-angle-double-down animated"></i>
@@ -249,10 +249,11 @@
     $(function () {
             $('#WAButton').floatingWhatsApp({
                 phone: '19176570740', //WhatsApp Business phone number
-                //headerTitle: 'Chat with us on WhatsApp!', //Popup Title
-                //popupMessage: 'Hello, how can we help you?', //Popup Message
+                headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+                popupMessage: 'Hello, how can we help you?', //Popup Message
                 //showPopup: true, //Enables popup display
                 buttonImage: '<img src="img/whatsapp.svg" />', //Button Image
+                message:'Hi, I would like to schedule an appointment for my pet.',
                 //headerColor: 'crimson', //Custom header color
                 //backgroundColor: 'crimson', //Custom background button color
                 position: "right" //Position: left | right
