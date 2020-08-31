@@ -41,10 +41,13 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
   <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+
+  <!--Floating WhatsApp css-->  
+<link rel="stylesheet" href="css/floating-wpp.min.css">  
+
 </head>
 
 <body id="page-top">
-
   <div class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-notify modal-success" role="document">
@@ -98,10 +101,12 @@
             </div>
             <div class='text-left'>
               <!-- <a href="#contact" class="btn btn-info js-scroll-trigger">Contact</a> -->
-              <a class="btn btn-lg btn-danger"
-                href="https://m.facebook.com/services_vertical/book_appointment/?page_id=1925128487577222&referrer=primary_cta&referrer_surface=page"
+              <a id="appointment" class="btn btn-lg btn-danger"
+                href="https://wa.me/19176570740"
                 target="_blank">Schedule an Appointment</a>
             </div>
+            <!--Div where the WhatsApp will be rendered-->  
+            <div id="WAButton"></div>  
             <br>
             <a href="#about" class="btn btn-circle js-scroll-trigger" id='scrollButton'>
               <i class="fa fa-angle-double-down animated"></i>
@@ -235,6 +240,23 @@
     var review_target = 'review-container';
   </script>
   <script src="https://reviewsonmywebsite.com/js/embed.js?v=8" type="text/javascript"></script>
+  <!--Floating WhatsApp javascript-->  
+<script type="text/javascript" src="js/floating-wpp.min.js"></script>
+  <script type="text/javascript">  
+    $(function () {
+            $('#WAButton').floatingWhatsApp({
+                phone: '9176570740', //WhatsApp Business phone number
+                //headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+                //popupMessage: 'Hello, how can we help you?', //Popup Message
+                //showPopup: true, //Enables popup display
+                buttonImage: '<img src="img/whatsapp.svg" />', //Button Image
+                //headerColor: 'crimson', //Custom header color
+                //backgroundColor: 'crimson', //Custom background button color
+                position: "right" //Position: left | right
+ 
+            });
+        });
+ </script>  
 
 </body>
 
