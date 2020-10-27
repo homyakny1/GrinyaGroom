@@ -236,3 +236,9 @@ button:focus {
     }
 
 }
+
+.btn-danger {
+    color: #fff;
+    background-color: #f9829b !important;
+    border-color: #f9829b !important;
+}
