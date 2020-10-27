@@ -27,16 +27,17 @@ $(window).on("load", function () {
     );
   };
   var i = 0;
-  var waypoint = new Waypoint({
-    element: document.getElementById("reviews"),
-    handler: function (direction) {
-      if (i == 0) {
+
+  $(window).on('scroll', function() {
+    var y_scroll_pos = window.pageYOffset;
+    var scroll_pos_test = 2000;             // set to whatever you want it to be
+
+    if(y_scroll_pos > scroll_pos_test && i == 0) {
         console.log("Reviews are shown");
         var numItems = $(".swiper-slide").length;
         $("#revNumber").jQuerySimpleCounter({ end: numItems, duration: 3000 });
         console.log(numItems + " Reviews are shown");
         i++;
-      }
-    },
-  });
+    }
+    });
 });
