@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name='keywords' content="">
+  <meta name='description' content="">
+  <meta name="author" content="Eugene Khom">
+  <link rel="icon" href="">
+  <meta property="og:image" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+
+  <title>POS</title>
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="styles/groomer/style.css" rel="stylesheet">
+  <!--   Custom style by FA -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!--   Jquery-UI -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class='bgrImg'></div>
+    <div class="row mr-auto" id="navbarSupportedContent">
+      <div class="col nav-button active">
+        <a class="nav-link" id='todayButton' href="#">Today</a>
+      </div>
+      <div class="col nav-button">
+        <a class="nav-link" id='appoitButton' href="#">Appointments</a>
+      </div>
+      <div class="col nav-button">
+        <a class="nav-link" id='customerButton' href="#">Customers</a>
+      </div>
+    </div>
+    <div class='row' id='todayField'>
+      <div class='col fullPage'>
+        <div>
+          <h2>You have <span id='numberOfApp'>0</span> appointments today.</h2>
+          <progress id="progres-bar" value="0" max="0"></progress>
+          <h2>Complete: <span id='completeApp'>0</span></h2>
+        </div>
+      </div>
+      <div class='col'>
+        <div class='row halfPage'>
+          <div class='col'>
+            <h2>Expected income: $<span id='expectedIncome'>0</span></h2>
+          </div>
+        </div>
+        <div class='row halfPage'>
+          <div class='col'>
+            <h2>Total so far: $<span id='totalNow'>0</span></h2>
+          </div>
+          </row>
+        </div>
+      </div>
+    </div>
+    <div class='row' id='appoitField' style='display: none'>
+      <div class='col-12 d-flex justify-content-center'><input id="date"><span class="focus-border"></span></div>
+      <div class='col' style="height: 55vh; overflow: auto;"><a id=totaPrice></a>
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Owner</th>
+              <th scope="col">Name</th>
+              <th scope="col">Breed</th>
+              <th scope="col">Service</th>
+              <th scope="col">Price</th>
+              <th scope="col">Groomer</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody id='todayApts'>
+          </tbody>
+        </table>
+          <div id='noApts' style='color:#ff9494'>
+            <p>You have no appointments for today</p>
+          </div>
+      </div>
+    </div>
+    <div id='customerField' style='display: none'>
+      <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" >Paste an image URL</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="
+    color: white;
+" aria-hidden="true">&times;</span></button></div>
+            <div class="modal-body"><input id='newImageLink'/></div>
+            <div class="modal-footer"><button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button><button type="button" class="btn btn-primary" id="submitPhotoURL">Save changes</button></div>
+          </div>
+        </div>
+      </div>
+      <div class='row d-flex justify-content-center'>
+        <select id='searchBy' class="btn btn-dark" typy='button' style="border-radius:0">
+                    <option disabled selected>Search by</option>
+                    <option value='phoneNumber'>Phone</option>
+                    <option value='lastName'>Last Name</option>
+                    <option value='email'>Email</option>
+                    <option value='petName'>Pet Name</option>
+        </select>
+        <h3 class="fs-subtitle"></h3>
+        <input style='margin-right:20px' id='searchValue' />
+        <button class="btn btn-dark" id='searchCustomers' type="button">Search</button>
+      </div>
+      <div class='row d-flex justify-content-center' style="height: 45vh; overflow: auto;">
+        <p c></p>
+        <table class="table table-dark table-striped">
+          <tbody id='customerInfo'>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-database.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src='scripts/groomer/script.js'></script>
+</body>
+
+</html>
