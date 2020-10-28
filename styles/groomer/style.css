@@ -174,7 +174,9 @@ li {
   outline: none;
 }
 
-
+.table td, .table th {
+  border-top: none;
+}
 
 
 
