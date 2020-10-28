@@ -469,7 +469,7 @@ $("#customerForm").submit(function(event) {
   $("#verifyTitle").text("Thank you " + firstName);
   $("#verifyDesc").text("Please continue to choose a service for " + petName);
   setTimeout(function() {
-    window.location.replace("index.html");
+    window.location.replace("appointment.html");
   }, 5000);
 });
 // Remove all checkboxes when previous button pressed
@@ -513,7 +513,7 @@ function findUsersMatchingPhone() {
               custLN +
               "</h2><h3 class='fs-subtitle'>We are happy to see you and " +
               custPetName +
-              " in our grooming. Please press continue to choose services you would like to use today.</h3><a href='index.html'><input style='width: 40%' type='button' name='home' class='action-button' value='Home' /></a><input style='width: 40%' type='button' id='continue' class='action-button' value='Continue' />"
+              " in our grooming. Please press continue to choose services you would like to use today.</h3><a href='appointment.html'><input style='width: 40%' type='button' name='home' class='action-button' value='Home' /></a><input style='width: 40%' type='button' id='continue' class='action-button' value='Continue' />"
           );
           $("#continue").click(function() {
             $("#formPhoneSearch").html("");
@@ -591,6 +591,6 @@ $('input[name="submitService"]').click(function() {
   $(".action-button").hide();
   saveServiceRecord(choosenService, totalPrice, date, checked);
   setTimeout(function() {
-    window.location.replace("index.html");
+    window.location.replace("appointment.html");
   }, 10000);
 });
