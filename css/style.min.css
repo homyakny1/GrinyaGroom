@@ -242,3 +242,69 @@ button:focus {
     background-color: #f9829b !important;
     border-color: #f9829b !important;
 }
+
+mainContainer {
+    overflow: hidden;
+  }
+  .floatMessageContainer {
+      text-align: center;
+      position: fixed;
+      top: 0.7em;
+      margin: 0% 20% 2% 20%;
+      width: 60%;
+      height: 3.5em;
+      overflow: hidden;
+      background-color: rgba(233, 125, 125, 0.5);
+      -webkit-border-radius: 5px 5px 5px 5px;
+      border-radius: 5px 5px 5px 5px;
+      z-index: 100029;
+      -webkit-animation: dillusion 1s ease 30s;
+      animation: dillusion 1s ease 30s forwards;
+  }
+  @-webkit-keyframes dillusion {
+      0% { opacity: 1; }
+      100% {
+          opacity: 0;
+          -ms-transform: translateY(100px); /* IE 9 */
+          -webkit-transform: translateY(100px); /* Safari */
+      }
+  }
+  @keyframes dillusion {
+      0% { opacity: 1; }
+      100% {
+          opacity: 0;
+          -ms-transform: translateY(100px); /* IE 9 */
+          transform: translateY(100px); /* Standard syntax */
+      }
+  }
+  
+  .floatMessageText p {
+      font: 11px Roboto, Verdana, "Lucida Sans", Arial, Helvetica, sans-serif;
+      /*clear: both;*/
+      color: white;
+      margin: 2% 2%;
+      line-height: 2em;
+      /* white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 94%; */
+  }
+  .floatMessageText .messageIco {
+      float: left;
+      margin: 11px;
+      width: 14px;
+      height: px;
+  }
+  .floatMessageText .close {
+      font-size: 11px;
+      color: grey;
+      background-color: transparent;
+      box-shadow: none;
+      float: right;
+      margin: 11px;
+      cursor: pointer;
+  }
+
+  .floatMessageText h1{
+      color: white;
+  }

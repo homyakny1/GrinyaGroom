@@ -56,7 +56,14 @@
   <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
 
   <!--Floating WhatsApp css-->  
-<link rel="stylesheet" href="css/floating-wpp.min.css">  
+  <div class="mainContainer">
+    <div class="floatMessageContainer">
+      <div class="floatMessageText">
+        <p><b><span style="color:red">IMPORTANT!</span></b> Due to maternity leave, I am only taking clients on Saturdays.
+        </p>
+      </div>
+    </div>
+  </div>
 
 </head>
 
@@ -120,7 +127,7 @@
             <div class='text-left'>
               <!-- <a href="#contact" class="btn btn-info js-scroll-trigger">Contact</a> -->
               <a id="appointment" class="btn btn-lg btn-danger"
-                href="sms://+19176570740;?&body=Hi.%20I%20would%20like%20to%20book%20an%20appointment%20for%20my%20pet."
+                href="sms://+14074594099;?&body=Hi.%20I%20would%20like%20to%20book%20an%20appointment%20for%20my%20pet."
                 target="_blank">Schedule an Appointment</a>
             </div>
             <!--Div where the WhatsApp will be rendered-->  
@@ -261,25 +268,7 @@
   
   <script src="https://reviewsonmywebsite.com/js/embedLoader.js?id=b2142a274b66ecd22e94" type="text/javascript"></script>
   <script src="https://reviewsonmywebsite.com/js/embed.js?v=8" type="text/javascript"></script>
-  <!--Floating WhatsApp javascript-->  
-<script type="text/javascript" src="js/floating-wpp.min.js"></script>
-  <script type="text/javascript">  
-    $(function () {
-            $('#WAButton').floatingWhatsApp({
-                phone: '19176570740', //WhatsApp Business phone number
-                headerTitle: 'Chat with us on WhatsApp!', //Popup Title
-                popupMessage: 'Hello, how can we help you?', //Popup Message
-                //showPopup: true, //Enables popup display
-                buttonImage: '<img src="img/whatsapp.svg" />', //Button Image
-                message:'Hi, I would like to schedule an appointment for my pet.',
-                //headerColor: 'crimson', //Custom header color
-                //backgroundColor: 'crimson', //Custom background button color
-                position: "right" //Position: left | right
  
-            });
-        });
- </script>  
-
 </body>
 
 </html>
