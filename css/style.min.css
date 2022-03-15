@@ -203,6 +203,10 @@ button:focus {
     #backVideo{
         display: none;
     }
+
+    #appointment{
+        display: none;
+    }
 }
 
 .j-post-overlay.juicer-feed ul.j-share {
