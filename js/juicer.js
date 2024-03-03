@@ -17,7 +17,7 @@
         if (e.nodeType) return ft.grep(t, function (t) {
             return t === e !== n
         });
-        if ("string" == typeof e) {
+        if ("string" == typeof e) {a
             if (_t.test(e)) return ft.filter(e, t, n);
             e = ft.filter(e, t)
         }
