@@ -5,7 +5,7 @@ div#comparison {
     max-height: 600px;
     overflow: hidden; }
   div#comparison figure { 
-    background-image: url(../img/fullgroom.webp); 
+    background-image: url(../img/full-groom\ before.jpg); 
     background-size: cover;
     position: relative;
     font-size: 0;
@@ -18,7 +18,7 @@ div#comparison {
     width: 100%;
   }
   div#comparison figure div { 
-    background-image: url(../img/cat.webp);
+    background-image: url(../img/full-groom\ after.jpg);
     background-size: cover;
     position: absolute;
     width: 50%; 
