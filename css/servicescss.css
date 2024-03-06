@@ -1,10 +1,10 @@
-div#comparison { 
+div.comparison { 
     width: 100vw;
     height: 100vw;
     max-width: 600px;
     max-height: 600px;
     overflow: hidden; }
-  div#comparison figure { 
+  div.comparison figure { 
     background-image: url(../img/full-groom\ before.jpg); 
     background-size: cover;
     position: relative;
@@ -13,12 +13,28 @@ div#comparison {
     height: 100%;
     margin: 0; 
   }
-  div#comparison figure > img { 
+  div#full-groom figure { 
+    background-image: url(../img/full-groom\ before.jpg); 
+  }
+  div#bath figure { 
+    background-image: url(); 
+  }
+  div#cat figure { 
+    background-image: url(../img/cat-before.jpg); 
+  }
+
+  div#creative figure { 
+    background-image: url(../img/creative-before.jpg); 
+  }
+  div#teeth figure { 
+    background-image: url(../img/teeth-before.jpg); 
+  }
+
+  div.comparison figure > img { 
     position: relative;
     width: 100%;
   }
-  div#comparison figure div { 
-    background-image: url(../img/full-groom\ after.jpg);
+  div.comparison figure div { 
     background-size: cover;
     position: absolute;
     width: 50%; 
@@ -26,6 +42,22 @@ div#comparison {
     overflow: hidden;
     bottom: 0;
     height: 100%;
+  }
+  div#full-groom figure div { 
+    background-image: url(../img/full-groom\ after.jpg);
+  }
+  div#fbath figure div { 
+    background-image: url();
+  }
+  div#cat figure div { 
+    background-image: url(../img/Cat-after.jpg);
+  }
+
+  div#creative figure div { 
+    background-image: url(../img/creative-after.jpg);
+  }
+  div#teeth figure div { 
+    background-image: url(../img/teeth-after.jpg);
   }
   
   input[type=range]{
