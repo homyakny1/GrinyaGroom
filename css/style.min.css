@@ -68,10 +68,15 @@ ul.subnav {
 }
 
 .subnav {
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase
+}
+
+.serviceSubNav{
+    font-size: 25px !important;
+    /* border-bottom: 3px solid white; */
 }
 
 .nav-link {
@@ -173,8 +178,8 @@ button:focus {
 }
 
 .btn-danger {
-    background-color: #e464aa !important;
-    border-color: #e464aa !important;
+    background-color: #F8E8EE !important;
+    border-color: #F2BED1 !important;
 }
 
 .juicer-feed {
@@ -232,9 +237,9 @@ button:focus {
 }
 
 .btn-danger {
-    color: #fff;
-    background-color: #f9829b !important;
-    border-color: #f9829b !important;
+    color: white;
+    background-color: #F2BED1 !important;
+    border-color: #F2BED1 !important;
 }
 
 mainContainer {
