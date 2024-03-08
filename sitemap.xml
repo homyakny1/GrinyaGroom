@@ -8,14 +8,44 @@
 
 
 <url>
-  <loc>https://grinyagroom.com/</loc>
-  <lastmod>2019-07-11T17:40:33+00:00</lastmod>
+  <loc>https://groom.land/</loc>
+  <lastmod>2024-03-06T15:01:42+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://grinyagroom.com/img/Certificates.pdf</loc>
-  <lastmod>2019-07-11T17:40:33+00:00</lastmod>
+  <loc>https://groom.land/full_groom.html</loc>
+  <lastmod>2024-03-06T15:01:42+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://groom.land/bath.html</loc>
+  <lastmod>2024-03-06T15:01:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://groom.land/cat.html</loc>
+  <lastmod>2024-03-06T15:01:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://groom.land/teethCleaning.html</loc>
+  <lastmod>2024-03-06T15:01:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://groom.land/creative.html</loc>
+  <lastmod>2024-03-06T15:01:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://groom.land/addOns.html</loc>
+  <lastmod>2024-03-06T15:01:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://groom.land/index.html</loc>
+  <lastmod>2024-03-06T15:01:42+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
